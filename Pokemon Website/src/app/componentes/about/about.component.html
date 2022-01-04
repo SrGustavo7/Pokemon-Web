@@ -1,0 +1,27 @@
+<div class="container">
+    <div class=" row card-columns d-flex justify-content-center animated fadeInUp">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit();" class=" fondo2">
+            <h3>¡Envíanos un correo!</h3>
+            <div class="form-group">
+                <label for="I1">Correo electronico</label>
+                <input matInput placeholder="nombre@ejemplo.com " type="emai" [(ngModel)]="CorreoModel.correo" name="Correo" id="I1" class="form-control" required>
+            </div>
+            <div class="form-group ">
+                <label for="I2">Asunto</label>
+                <input matInput placeholder="Asunto" #asunto maxlength="60" [(ngModel)]="CorreoModel.asunto" name="Asunto" id="I2" class="form-control" required>
+            </div>
+            <div class="form-group ">
+                <label for="I3">Mensaje</label>
+                <textarea placeholder="Mensaje" [(ngModel)]="CorreoModel.mensaje" class="form-control " id="I3" rows="3" name="Mensaje" required> </textarea>
+            </div>
+            <button [disabled]="!contactForm.form.valid" type="submit " class="btn btn-primary">Enviar</button>
+            <br>
+            <br>
+            <h5>Contáctame</h5>
+            <mat-chip-list>
+                <mat-chip class="chips" color="accent">Correo Electronicos: <br>grosalesc2@miumg.edu.gt</mat-chip>
+                <mat-chip class="chips" color="primary">Número Telefonico: <br>+502 49119033</mat-chip>
+            </mat-chip-list>
+        </form>
+    </div>
+</div>

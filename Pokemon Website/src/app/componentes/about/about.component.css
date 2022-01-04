@@ -1,0 +1,21 @@
+.fondo2 {
+    background: linear-gradient(to bottom right, rgb(8, 71, 122), rgb(121, 20, 7));
+    color: wheat;
+}
+
+form {
+    width: 20rem;
+    padding: 1.1rem;
+}
+
+.chips {
+    font-size: 0.8rem;
+    color: white;
+    padding: 1.3rem;
+    width: fit-content;
+}
+
+.container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
